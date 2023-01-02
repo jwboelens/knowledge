@@ -3,4 +3,4 @@
 - Leopold FC750R
 - AOC 24G2U
 - iPad Mini 6
-- [Google Pixel 6a running GrapheneOS](/google pixel 6a.md)
+- [Google Pixel 6a running GrapheneOS](google pixel 6a.md)
