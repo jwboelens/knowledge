@@ -1,4 +1,4 @@
-~~
+```
 <ul class="photos">
   {{ range .Pages }}
     <li>
@@ -6,9 +6,8 @@
     </li>
   {{ end }}
 </ul>
-~~
-
-~~
+```
+```
 .photos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -22,4 +21,4 @@
     margin-bottom: 0;
 }
 }
-~~
+```
