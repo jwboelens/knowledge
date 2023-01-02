@@ -1,0 +1,4 @@
+In your config enter:
+
+[markup.goldmark.renderer]
+unsafe= true

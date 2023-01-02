@@ -1,0 +1,59 @@
+{{define "main"}}
+
+Hi. I’m Jan-Willem Boelens. I have a cat named Bob. I have no need for a website, but here we are.
+
+<s>I hate all social media.</s> I'm trying out <a href="https://fosstodon.org/@jwb">Fosstodon</a>.
+
+This website has some lists that are mostly for myself.
+
+<p>
+📍 51°55'27.993"N / 4°28'39.9"E
+</p>
+
+<hr>
+
+<h3>🎬 Latest 3 <a href="/movies">movies</a></h3>
+
+{{ range (where .Site.Pages "Section" "movies") }}
+  {{ range first 3 .Pages }}
+   <movies>
+     <div>{{.Title}} {{.Params.rating}}</div>
+     <time>{{.Date.Format "2006-01-02"}}</time>
+   </movies>
+  {{ end }}
+{{ end }}
+
+<hr>
+
+<h3>📚 Latest 3 <a href="/books">books</a></h3>
+
+<books>
+{{ range (where .Site.Pages "Section" "books") }}
+  {{ range last 3 .Pages }}
+  
+    <div>{{.Title}}</div>
+    <div>{{.Params.author}}</div>
+    <time>{{.Date.Format "2006-01-02"}}</time>
+    <div>{{.Params.rating}}</div>
+  
+  {{ end }}
+{{ end }}
+</books>
+
+<hr>
+
+<h3>📷 Latest 3 <a href="/photos">photos</a></h3>
+
+<photos>
+{{ range (where .Site.Pages "Section" "photos") }}
+{{ $PagePermalink := .Permalink }}
+	{{ range .Resources }}
+  		<div>
+			{{ $image := .Resize "150x q75 center" }}
+			<a href="{{ $PagePermalink }}"><img src="{{ $image.RelPermalink }}"></a>
+  		</div>
+	{{ end }}
+{{ end }}
+</photos>
+    
+{{ end }}

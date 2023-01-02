@@ -1,0 +1,7 @@
+Sets AOC monitor to 144hz:
+
+$ xrandr --output DP-3 --mode 1920x1080 --rate 144
+
+Update system:
+
+sudo pacman -Syyu

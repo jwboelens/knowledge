@@ -1,0 +1,11 @@
+If you want to be able to hide or show the post title, use this little snippet.
+
+---
+title: "Meditation"
+date: 2019-05-21
+showtitle: false
+---
+ 
+{{ if .Params.showtitle }}  
+  <h1>{{ .Title }}</h1>
+{{ end }}

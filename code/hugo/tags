@@ -1,0 +1,25 @@
+<ul id="tags">
+  {{ range .Params.tags }}
+    <li><a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a> </li>
+  {{ end }}
+</ul>
+
+#tags {
+	list-style: none;
+	display: block;
+	margin: 1.5em 0;
+	padding: 0;
+	text-transform: lowercase;
+	font-size: 11px;
+}
+#tags li {
+	display: inline;
+	margin-right: 1em;
+}
+#tags a {
+	color: #aaa;
+	line-height: 1;
+}
+#tags a:before {
+	content: "#"
+}
