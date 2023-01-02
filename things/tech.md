@@ -4,3 +4,7 @@
 - AOC 24G2U
 - iPad Mini 6
 - [Google Pixel 6a running GrapheneOS](google-pixel-6a.md)
+- Canon G7X Mark II
+- Garmin Forerunner 245
+- [Variaty of watches](watches.md)
+- Amazon Kindle Paperwhite
