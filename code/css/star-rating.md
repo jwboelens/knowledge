@@ -9,7 +9,7 @@ This css code transforms the 13px increments to actual stars. So 13px is one sta
 }
 ```
 
-U can use this code to generate the stars in your html.
+You can use this code to generate the stars in your html.
 
 ```
 <div class="star" style="width:13px"></div> : 1 star
