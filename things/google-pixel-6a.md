@@ -1,6 +1,6 @@
 # Google Pixel 6a
 
-My current phone is a Google Pixel 6a. It runs GrapheneOS, which is a fork (?) of Android but heavily focused on privacy.
+My current phone is a Google Pixel 6a. It runs [GrapheneOS](https://grapheneos.org/), which is a fork (?) of Android but heavily focused on privacy.
 
 ### Phone apps
 
